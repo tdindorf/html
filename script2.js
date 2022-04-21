@@ -1,4 +1,4 @@
-import * from './sizeMe.js';
+import * as zz from './sizeMe.js';
 
 function myFun2(me) {
 	var svg = SVG(me);
@@ -7,7 +7,7 @@ function myFun2(me) {
 
 	box.circle(4).center(0, 0).fill("green");
 	
-	sizeMySvg(box, svg);
+	zz.sizeMySvg(box, svg);
 }
 
 // expose myFun2 to all
