@@ -2,25 +2,32 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <title>Github Module Test 2</title>
+        <title>Github MdlTst 3</title>
         <link rel="stylesheet" href="./style.css">
         
         <script src='https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.1/svg.min.js'></script>
-        <script type="module" src="./script.js"></script>
- 
-        <script>
-            function myFun(me) {
-              window.addEventListener('load', (e) => {
-                myFun2(me)
-              });
-            }
+        <!--script type="module" src="./script.js"></script-->
+        
+        <script type="module">
+        import {sizeMySvg} from './sizeMe.js';
+
+         function myFun2(me) {
+	        var svg = SVG(me);
+	        var box = svg.group();
+	        var defs = svg.defs();
+
+	        box.circle(4).center(0, 0).fill("red");
+	
+	        sizeMySvg(box, svg);
+        }
+            
         </script>
         
     </head>
     
     <body>
-        <p>Hello there again, from Github 2.</p>
-        <svg onLoad="myFun(this)" height="200px"></svg>
+        <p>Hello there again, from Github 3.</p>
+        <svg onLoad="myFun2(this)" height="200px"></svg>
         
     </body>
 </html>
