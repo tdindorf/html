@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - A Pen by Tom</title>
+        <link rel="stylesheet" href="./style.css">
+        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.1/svg.min.js'></script>
+        <script  type="module" src="script.js"></script>
+ 
+        <script>
+            function myFun(me) {
+                myFun2(me)
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+        <p>Hello there again</p>
+        <svg onLoad="myFun(this)" height="200px"></svg>
+        
+    </body>
+</html>
