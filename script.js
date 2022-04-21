@@ -1,4 +1,4 @@
-import {sizeMySvg} from 'sizeMe.js';
+import {sizeMySvg} from './sizeMe.js';
 
 function myFun2(me) {
 	var svg = SVG(me);
