@@ -10,6 +10,9 @@ function myFun2(me) {
 	sizeMySvg(box, svg);
 }
 
+// expose myFun2 to all
+window.myFun2 = myFun2;
+
 /*
 //********** RESIZE ************
 function sizeMySvg(box, svg, sH, sW) {
